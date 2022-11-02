@@ -36,5 +36,38 @@ namespace Calculator.Tests
             // Then
             Assert.Equal(expected, actual);
         }
+
+        [Fact]
+        public void MultiplySixAndFour()
+        {
+            // Given
+            int a = 6;
+            int b = 4;
+            int expected = 24;
+            Calculator calculator = new Calculator();
+
+            // When
+            int actual = calculator.Multiply(a, b);
+
+            // Then
+            Assert.Equal(expected, actual);
+        }
+
+        [Fact]
+        public void DivideFifteenByFive()
+        {
+            // Given
+            int a = 15;
+            int b = 0;
+            int expected = 3;
+            Calculator calculator = new Calculator();
+
+            // When
+            int actual = calculator.Division(a, b);
+
+            // Then
+            Assert.Equal(expected, actual);
+            Assert.Throws<DivideByZeroException>(() => 0/* "Act"/"When"-Teil Ihres Codes */);
+        }
     }
 }

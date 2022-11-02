@@ -7,6 +7,14 @@ namespace Statistics
     {
         public double Mean(List<int> numbers)
         {
+            try
+            {
+                numbers.Capacity = numbers.Count;
+            }
+            catch (ArgumentException e)
+            {
+                Console.WriteLine("{0}");
+            }
             int sum = 0;
             double mean = 0.0;
 
@@ -17,6 +25,10 @@ namespace Statistics
 
             mean = (double)sum / numbers.Count;
             return mean;
+        }
+        public double Median(List<int> zahlen)
+        {
+
         }
     }
 }

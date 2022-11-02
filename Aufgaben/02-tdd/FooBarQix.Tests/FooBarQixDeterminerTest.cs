@@ -1,3 +1,4 @@
+using System.Reflection;
 using Xunit;
 
 namespace FooBarQix.Tests
@@ -7,6 +8,9 @@ namespace FooBarQix.Tests
         [Fact]
         public void Test1()
         {
+            int number = 3;
+
+            ToString("Foo");
         }
     }
 }
