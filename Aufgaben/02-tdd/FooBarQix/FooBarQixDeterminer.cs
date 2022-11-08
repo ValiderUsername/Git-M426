@@ -1,39 +1,28 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.IO;
-using System.Net.Http.Json;
+using System.Threading;
+
 namespace FooBarQix
 {
     public class FooBarQixDeterminer
     {
-        public string Determine(int input)
+        public string Determine(int Eingabe)
         {
-            string result = "";
-            if (input % 3 == 0)
-            {
-                result += "FOO";
+            string EingabeString = Eingabe.ToString();
+            string Resultat = "";
+            if(Eingabe % 3 == 0){
+              Resultat += "Foo";
             }
-            if (input % 5 == 0)
-            {
-                result += "BAR";
+            if(Eingabe % 5 == 0){
+              Resultat += "Bar";
             }
-            if (input % 7 == 0)
-            {
-                result += "QIX";
+            if(Eingabe % 7 == 0){
+              Resultat += "Qix";
             }
-            string Ausgabe = string.valueOf(input);
-            for (int j = 0; j < Ausgabe.Length(); j++)
+            if (Resultat == "")
             {
-                char element = Ausgabe.charAt(j);
-                if (element == '3')
-                    result += "Foo";
-                if (element == '5')
-                    result += "Bar";
-                if (element == '7')
-                    result += "Qix";
+                Resultat += Eingabe.ToString();
             }
-            return result.isEmpty() ? input : result;
+            return Resultat;
         }
     }
 }

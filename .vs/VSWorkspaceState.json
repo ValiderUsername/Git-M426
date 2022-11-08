@@ -2,10 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\Aufgaben",
-    "\\Aufgaben\\01-unittest",
+    "\\Aufgaben\\01-unittest\\Statistics.Tests",
+    "\\Aufgaben\\02-tdd",
+    "\\Aufgaben\\02-tdd\\FooBarQix",
     "\\Beispiele",
     "\\hello-csharp"
   ],
-  "SelectedNode": "\\Aufgaben\\01-unittest\\unittest-csharp.sln",
+  "SelectedNode": "\\Aufgaben\\02-tdd\\FooBarQix\\FooBarQixDeterminer.cs",
   "PreviewInSolutionExplorer": false
 }
