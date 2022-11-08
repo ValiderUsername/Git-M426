@@ -8,9 +8,7 @@ namespace FooBarQix.Tests
         [Fact]
         public void Test1()
         {
-            int number = 3;
 
-            ToString("Foo");
         }
     }
 }
